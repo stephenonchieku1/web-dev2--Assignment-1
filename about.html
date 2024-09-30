@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Build.Resume </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            color: #007bff;
+        }
+        .feature {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .feature h3 {
+            margin-top: 0;
+            color: #007bff;
+        }
+        #faqSection {
+            margin-top: 30px;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+        }
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Build.Resume</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>About Our Application</h2>
+            <p>Welcome to the Resume Generator, your go-to tool for creating professional, eye-catching resumes in minutes. Our application is designed to simplify the resume creation process, helping job seekers stand out in today's competitive market.</p>
+        </section>
+        
+        <section>
+            <h2>Key Features</h2>
+            <div class="feature">
+                <h3>Easy-to-Use Interface</h3>
+                <p>Our intuitive design guides you through each step of the resume creation process, making it simple for anyone to create a professional resume.</p>
+            </div>
+            <div class="feature">
+                <h3>Customizable Templates</h3>
+                <p>Choose from a variety of professionally designed templates to find the perfect look for your resume.</p>
+            </div>
+            <div class="feature">
+                <h3>Real-Time Preview</h3>
+                <p>See your changes instantly with our live preview feature, ensuring your resume looks exactly how you want it.</p>
+            </div>
+            <div class="feature">
+                <h3>ATS-Friendly Formats</h3>
+                <p>Our resumes are optimized for Applicant Tracking Systems, increasing your chances of getting past initial screenings.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>How It Works</h2>
+            <ol>
+                <li>Select a template that suits your style and industry.</li>
+                <li>Fill in your personal information, work experience, education, and skills.</li>
+                <li>Customize colors, fonts, and layout as desired.</li>
+                <li>Preview your resume and make any necessary adjustments.</li>
+                <li>Download your completed resume in PDF or Word format.</li>
+            </ol>
+        </section>
+        
+        <section id="faqSection">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-question">Is my information secure?</div>
+                <div class="faq-answer">Yes, we take data security seriously. Your information is encrypted and never shared with third parties.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Can I update my resume later?</div>
+                <div class="faq-answer">Absolutely! You can save your progress and come back to update your resume at any time.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Is the service free?</div>
+                <div class="faq-answer">We offer both free and premium options. The basic resume creation is free, while advanced features and templates are available in our premium plans.</div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class = "footer bg-dark">
+        <div class="container">
+            <div class = "footer-content text-center">
+                <p class="fs-15">&copy;Copyright 2024. All Rights Reserved - <span>build.resume</span></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>
